@@ -18,6 +18,7 @@ function AdminCobradorList({ onicinaId, onSelectCobrador }) {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     cargarCobradores();
   }, [onicinaId]);

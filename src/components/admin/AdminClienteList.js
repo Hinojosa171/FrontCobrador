@@ -20,6 +20,7 @@ function AdminClienteList({ onicinaId }) {
     cobradorID: '',
   });
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     cargarDatos();
   }, [onicinaId]);

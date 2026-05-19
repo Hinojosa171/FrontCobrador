@@ -15,6 +15,7 @@ function AdminDashboard({ onicinaId }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     cargarEstadisticas();
   }, [onicinaId]);

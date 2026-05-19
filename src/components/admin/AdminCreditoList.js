@@ -13,6 +13,7 @@ function AdminCreditoList({ onicinaId }) {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     cargarDatos();
   }, [onicinaId]);
